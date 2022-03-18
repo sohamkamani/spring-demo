@@ -1,0 +1,38 @@
+GET http://localhost:8081/simple-request
+
+###
+
+GET http://localhost:8081/echo?text=hello
+
+###
+
+GET http://localhost:8081/echo/hello
+
+###
+
+
+
+###
+
+POST http://localhost:8081/coffee
+Content-Type: application/json
+
+{
+    "size": "M",
+    "milk": false
+}
+
+###
+
+GET http://localhost:8081/echo/headers
+
+###
+
+GET http://localhost:8081/custom-header
+###
+
+GET http://localhost:8081/sample-error
+
+###
+
+GET http://localhost:8081/extra
