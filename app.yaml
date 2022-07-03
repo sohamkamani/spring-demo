@@ -1,0 +1,11 @@
+runtime: java11
+env: standard
+# remember to use an instance class compatible with your scaling type
+instance_class: B1
+handlers:
+  - url: .*
+    script: auto
+basic_scaling:
+  max_instances: 3
+  idle_timeout: 10m
+service_account: sample@appspot.gserviceaccount.com
